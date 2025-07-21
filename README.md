@@ -1,8 +1,6 @@
 # E-commerce Backend with FastAPI & MongoDB
 
-This is a sample backend project built using **FastAPI** and **MongoDB Atlas**
-
-It demonstrates CRUD APIs for an e-commerce-like system, including product listing, order creation, and user-specific order history.
+This is my beginner backend project built while learning FastAPI and MongoDB. It has simple APIs to create products, place orders, and get order history like Amazon/Flipkart.
 
 ##  Tech Stack
 
@@ -28,7 +26,6 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
 
 ### `POST /products`
 
-```json
 {
   "name": "T-Shirt",
   "price": 499.99,
