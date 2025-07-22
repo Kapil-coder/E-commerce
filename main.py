@@ -8,6 +8,11 @@ from db.database import productcollection
 
 app = FastAPI()
 
+#Base route
+@app.get("/")
+def root():
+    return {"message": "E-commerce API is live"}
+
 
 
 app.include_router(products.router)
