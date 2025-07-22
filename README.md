@@ -25,8 +25,6 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
 ## Product API
 
 ### `POST /products`
-
-
 json``` 
 {
   "name": "T-Shirt",
