@@ -46,6 +46,7 @@ Returns products matching filters.
   "user_id": "kapil123",
   "product_ids": ["<id1>", "<id2>"]
 }
+json```
 
 GET /orders/kapil123?limit=2&offset=0
 Returns all orders of user kapil123.
