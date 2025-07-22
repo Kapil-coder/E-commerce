@@ -25,15 +25,16 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
 ## Product API
 
 ### `POST /products`
-```json
-{
+
+
+json``` {
   "name": "T-Shirt",
   "price": 499.99,
   "sizes": [
     { "size": "M", "quantity": 50 }
   ]
 }
-json```
+
 
 GET /products?name=shirt&size=M
 Returns products matching filters.
@@ -42,12 +43,13 @@ Returns products matching filters.
 ## Orders API
 
 ### POST /orders
+
 ```json
 {
   "user_id": "kapil123",
   "product_ids": ["<id1>", "<id2>"]
 }
-json```
+
 
 GET /orders/kapil123?limit=2&offset=0
 Returns all orders of user kapil123.
