@@ -27,13 +27,14 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
 ### `POST /products`
 
 
-json``` {
+json``` 
+{
   "name": "T-Shirt",
   "price": 499.99,
   "sizes": [
     { "size": "M", "quantity": 50 }
   ]
-}
+} 
 
 
 GET /products?name=shirt&size=M
@@ -44,7 +45,7 @@ Returns products matching filters.
 
 ### POST /orders
 
-```json
+
 {
   "user_id": "kapil123",
   "product_ids": ["<id1>", "<id2>"]
