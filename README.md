@@ -33,6 +33,7 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
     { "size": "M", "quantity": 50 }
   ]
 }
+json```
 
 GET /products?name=shirt&size=M
 Returns products matching filters.
