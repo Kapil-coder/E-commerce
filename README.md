@@ -1,7 +1,7 @@
 # E-commerce Backend with FastAPI & MongoDB
 
 This is my beginner backend project built while learning FastAPI and MongoDB. It has simple APIs to create products, place orders, and get order history like Amazon/Flipkart.
-
+**Live URL-** https://ecommerceapi-gxek.onrender.com 
 ##  Tech Stack
 
 -  **FastAPI** — Modern, fast (high-performance) web framework
@@ -25,7 +25,7 @@ Supports filtering, regex search, pagination (`limit`, `offset`).
 ## Product API
 
 ### `POST /products`
-
+```json
 {
   "name": "T-Shirt",
   "price": 499.99,
@@ -41,7 +41,7 @@ Returns products matching filters.
 ## Orders API
 
 ### POST /orders
-
+```json
 {
   "user_id": "kapil123",
   "product_ids": ["<id1>", "<id2>"]
@@ -49,6 +49,22 @@ Returns products matching filters.
 
 GET /orders/kapil123?limit=2&offset=0
 Returns all orders of user kapil123.
+
+
+# Installation & Run Locally-
+## Clone the repository
+git clone https://github.com/Kapil-coder/E-commerce.git
+cd E-commerce
+
+## Create virtual environment
+python -m venv venv
+
+## Install dependencies
+pip install -r requirements.txt
+
+## Run the FastAPI app
+uvicorn main:app --reload
+
 
 
 
