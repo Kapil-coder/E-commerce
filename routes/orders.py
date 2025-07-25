@@ -13,8 +13,9 @@ def createorders(order:Order):
     
       # Insert into MongoDB
     result=ordercollection.insert_one(orderdata)
+    return {"id": str(result.inserted_id)}
 
-   return {"id": str(result.inserted_id)}
+  
 
 
 
