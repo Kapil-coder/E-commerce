@@ -12,8 +12,9 @@ def createprodcut(product:Product):
     product_dict= product.model_dump()
     #insert product
     result= productcollection.insert_one(product_dict)
-
     return {"id": str(result.inserted_id)}
+
+    
 
 @router.get("/products", status_code=200)
 def getproducts(name: str = None, size: str = None): # type: ignore
