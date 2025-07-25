@@ -13,9 +13,7 @@ def createprodcut(product:Product):
     #insert product
     result= productcollection.insert_one(product_dict)
 
-    # Add the DB id to the product dictionary 
-    product_dict["_id"]= str(result.inserted_id) 
-    return product_dict
+    return {"id": str(result.inserted_id)}
 
 @router.get("/products", status_code=200)
 def getproducts(name: str = None, size: str = None): # type: ignore
