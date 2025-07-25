@@ -14,10 +14,7 @@ def createorders(order:Order):
       # Insert into MongoDB
     result=ordercollection.insert_one(orderdata)
 
-    #  ObjectId to string for response
-    orderdata["_id"]=str(result.inserted_id)
-
-    return orderdata
+   return {"id": str(result.inserted_id)}
 
 
 
